@@ -87,6 +87,7 @@ public class Main {
 
         //Exercício 5
 
+        /*
         float[] array5 = new float[5];
 
         System.out.println("Digite 5 valores: ");
@@ -120,5 +121,117 @@ public class Main {
         }
 
         System.out.println("O menor número do vetor eh: " + me);
+        */
+
+        //Exercício 6
+
+        /*
+        float[] array6 = new float[5];
+
+        System.out.println("Digite 5 valores: ");
+        for(int i = 0; i < 5; i++) {
+            array6[i] = x.nextFloat();
+        }
+
+        System.out.printf("Números digitados: " + "|");
+        for(int i = 0; i < 5; i++){
+            System.out.printf(array6[i] + "|");
+        }
+
+        System.out.println("\n");
+
+        float ma = array6[0];
+
+        for(int i = 1; i < 5; i++) {
+            if(array6[i] > ma){
+                ma = array6[i];
+            }
+        }
+
+        for(int i = 0; i < 5; i++){
+            if(array6[i] == ma){
+                System.out.println("O maior número do vetor eh: " + ma + " e sua posição no vetor eh [" + i + "]");
+            }
+        }
+
+        float me = array6[0];
+
+        for(int i = 1; i < 5; i ++){
+            if(array6[i] < me){
+                me = array6[i];
+            }
+        }
+
+        for(int i = 0; i < 5; i++){
+            if(array6[i] == me){
+                System.out.println("O menor número do vetor eh: " + me + " e sua posição no vetor eh [" + i + "]");
+            }
+        }
+        */
+
+        //Exercício 7
+
+        /*
+        float[] array7 = new float[5];
+
+        for(int i = 0; i < 5; i++){
+            System.out.println("Digite a nota do aluno " + (i + 1) + ": ");
+            array7[i] = x.nextFloat();
+
+            if(array7[i] > 50){
+                System.out.println("Nota inválida!");
+                i--;
+            }
+        }
+
+        for(int i = 0; i < 5; i++){
+            System.out.println("Nota do aluno " + (i + 1) + ": " + array7[i]);
+        }
+
+        for(int i = 0; i < 5; i++){
+            array7[i] *= 2;
+        }
+
+        System.out.println("Nota dos alunos depois da normalização: ");
+        for(int i = 0; i < 5; i++){
+            System.out.println("\nNota do aluno " + (i + 1) + ": " + array7[i]);
+        }
+        */
+
+        //Exercício 8
+        /*
+        float[] array8 = new float[5];
+
+        System.out.println("Digite 5 valores: ");
+
+        for(int i = 0; i < 5; i++){
+            array8[i] = x.nextFloat();
+        }
+
+        float media = 0;
+
+        for(int i = 0; i < 5; i++){
+            media += array8[i];
+        }
+
+        media = media / 5;
+
+        System.out.println("\nO valor da média é: " + media);
+
+        float dp = 0;
+
+        for(int i = 0; i < 5; i++){
+            dp += (float) Math.pow(array8[i] - media, 2);
+        }
+
+        dp = dp / (5 - 1);
+
+        dp = (float) Math.sqrt(dp);
+
+        System.out.println("\nO valor do desvio padrão é: " + dp);
+        */
+
+        //Exercício 9
+
     }
 }
