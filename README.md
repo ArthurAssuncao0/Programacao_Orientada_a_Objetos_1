@@ -1,6 +1,6 @@
 # Informations
 
-<a href="https://facom.ufu.br/pessoas/docentes/bruno-augusto-nassif-travencolo" target="_blank"><img src="https://img.shields.io/badge/Mastered%20by-9370DB.svg"></a>
+<a href="https://facom.ufu.br/pessoas/docentes/bruno-augusto-nassif-travencolo" target="_blank"><img src="https://img.shields.io/badge/Mastered%20by-5CACEE.svg"></a>
 
 ##
 
