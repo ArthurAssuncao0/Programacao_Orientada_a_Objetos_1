@@ -5,14 +5,17 @@ public class Forma {
 
     protected double volume;
 
-    protected double lr1;
+    protected double vt1;
 
-    protected double l2;
+    protected double vt2;
 
-    public Forma(String nome, int lr1, int l2){
+    protected double vt3;
+
+    public Forma(String nome, double vt1, double vt2, double vt3){
         this.nome = nome;
-        this.lr1 = lr1;
-        this.l2 = l2;
+        this.vt1 = vt1;
+        this.vt2 = vt2;
+        this.vt3 = vt3;
     }
 
     public double obterArea(){
@@ -25,7 +28,5 @@ public class Forma {
 
     public void mostrarInfos(){
         System.out.println("Nome da forma: " + nome);
-        System.out.println("Área da forma: " + obterArea());
-        System.out.println("Volume da forma: " + obterVolume());
     }
 }
