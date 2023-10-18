@@ -1,10 +1,10 @@
-public class Circulo extends Forma{
-    public Circulo(String nome, double vt1){
-        super(nome, vt1, 0, 0);
+public class Circulo extends Bidimensional{
+    public Circulo(String nome, double vb1){
+        super(nome, vb1, 0);
     }
 
     public double obterArea(){
-        return area = vt1 * 3.14;
+        return area = (vb1 * vb1) * 3.14;
     }
 
     public void mostrarInfos(){

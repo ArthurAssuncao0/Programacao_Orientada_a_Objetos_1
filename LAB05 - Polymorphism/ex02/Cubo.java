@@ -1,4 +1,4 @@
-public class Cubo extends Forma {
+public class Cubo extends Tridimensional {
     public Cubo(String nome, double vt1){
         super(nome, vt1, 0, 0);
     }

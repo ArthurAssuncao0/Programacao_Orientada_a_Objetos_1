@@ -1,4 +1,4 @@
-public class Esfera extends Forma {
+public class Esfera extends Tridimensional {
     public Esfera(String nome, double vt1){
         super(nome, vt1, 0, 0);
     }

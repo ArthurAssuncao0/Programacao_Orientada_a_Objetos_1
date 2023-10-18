@@ -1,13 +1,16 @@
 import static java.lang.Math.sqrt;
 
-public class Triangulo extends Forma{
-    public Triangulo(String nome, double vt1, double vt2, double vt3){
-        super(nome, vt1, vt2, vt3);
+public class Triangulo extends Bidimensional{
+
+    protected double vb3;
+    public Triangulo(String nome, double vb1, double vb2, double vb3){
+        super(nome, vb1, vb2);
+        this.vb3 = vb3;
     }
 
     public double obterArea(){
-        double x = (vt1 + vt2 + vt3) / 2;
-        return area = sqrt(x * (x - vt1) * (x - vt2) * (x - vt3));
+        double x = (vb1 + vb2 + vb3) / 2;
+        return area = sqrt(x * (x - vb1) * (x - vb2) * (x - vb3));
     }
 
     public void mostrarInfos(){

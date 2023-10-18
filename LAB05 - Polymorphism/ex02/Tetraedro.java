@@ -1,5 +1,5 @@
 import static java.lang.Math.sqrt;
-public class Tetraedro extends Forma{
+public class Tetraedro extends Tridimensional{
     public Tetraedro(String nome, double vt1){
         super(nome, vt1, 0,0);
     }

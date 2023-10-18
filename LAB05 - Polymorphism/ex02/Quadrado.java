@@ -1,10 +1,10 @@
-public class Quadrado extends Forma{
-    public Quadrado(String nome, double vt1){
-        super(nome, vt1, 0,0);
+public class Quadrado extends Bidimensional{
+    public Quadrado(String nome, double vb1){
+        super(nome, vb1, 0);
     }
 
     public double obterArea(){
-        return area = vt1 * vt1;
+        return area = vb1 * vb1;
     }
 
     public void mostrarInfos(){
