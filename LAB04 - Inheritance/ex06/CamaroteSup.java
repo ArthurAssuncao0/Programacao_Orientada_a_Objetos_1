@@ -1,15 +1,13 @@
 public class CamaroteSup extends VIP{
-    private String location;
 
-    private int valorAddCamSup;
+    private double valorAddCamSup;
 
-    public CamaroteSup(String location){
-        this.location = location;
-        valorAddCamSup = super.valorAdd + 50;
+    public CamaroteSup(double valorAddCamSup, double valorAdd){
+        super(valorAdd);
+        this.valorAddCamSup = valorAddCamSup;
     }
 
     public void imprimeCamSup(){
-        System.out.println("Localização: " + location);
-        System.out.println("Valor: " + valorAddCamSup);
+        System.out.println("Valor: " + (retornaVIP() + valorAddCamSup));
     }
 }

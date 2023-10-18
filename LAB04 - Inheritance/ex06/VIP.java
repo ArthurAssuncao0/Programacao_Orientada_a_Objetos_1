@@ -1,11 +1,12 @@
 public class VIP extends Ingresso{
-    protected int valorAdd;
+    protected double valorAdd;
 
-    public VIP(Ingresso ingresso){
-        valorAdd = ingresso.valor + 30;
+    public VIP(double valorAdd){
+        this.valorAdd = valorAdd;
+
     }
 
-    public void imprimeVIP(){
-        System.out.println("Ingreso VIP (valor): " + valorAdd);
+    public double retornaVIP(){
+        return valor + valorAdd;
     }
 }

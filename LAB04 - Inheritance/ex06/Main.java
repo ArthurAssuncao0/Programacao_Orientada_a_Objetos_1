@@ -1,17 +1,15 @@
 import java.util.Scanner;
 public class Main{
     public static void main(String args[]){
-        CamaroteInf camaroteInf = new CamaroteInf("A-1");
-        CamaroteSup camaroteSup = new CamaroteSup("B-2");
+        Ingresso camaroteInf = new CamaroteInf("1-A", 10);
+        Ingresso camaroteSup = new CamaroteSup(30, 10);
+        Ingresso ingresso = new Normal();
 
-        camaroteSup.escreveValor(20);
-        camaroteInf.escreveValor(20);
+        ((Normal) ingresso).imprime();
 
-        camaroteSup.imprimeVIP();
-        camaroteInf.imprimeVIP();
-
+        ((CamaroteInf) camaroteInf).imprimeCamInf();
         System.out.println();
 
-
+        ((CamaroteSup) camaroteSup).imprimeCamSup();
     }
 }
