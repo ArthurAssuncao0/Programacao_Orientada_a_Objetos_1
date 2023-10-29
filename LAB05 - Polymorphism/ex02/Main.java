@@ -10,7 +10,7 @@ public class Main {
         formas[5] = new Tetraedro("Tetraedro-A", 2);
 
         System.out.println();
-        for(Forma forma: formas){
+        for(Forma forma : formas){
             if (forma instanceof Bidimensional){
                 System.out.println("Área forma bidimensional: " + forma.obterArea());
             }
