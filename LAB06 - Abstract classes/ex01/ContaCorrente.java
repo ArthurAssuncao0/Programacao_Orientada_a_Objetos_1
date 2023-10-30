@@ -13,11 +13,9 @@ public class ContaCorrente {
 
     public boolean debitaValor ( float val , int pwd ) {
         if ( pwd != senha ) {
-            System.out.println("Senha inválida!");
             return (false); // senha deve ser válida
         }
         if ( estado != 1 ) {
-            System.out.println("Conta deve ser ativa!");
             return (false); // conta deve ser ativa
         }
         if ( val <= 0 )
@@ -28,7 +26,6 @@ public class ContaCorrente {
         saldo -= val ;
 
         if ( saldo == 0 ) {
-            System.out.println("Sua conta foi inativada por falta de drédito!");
             estado = 2; // torna conta inativa
         }
         return ( true ) ;
