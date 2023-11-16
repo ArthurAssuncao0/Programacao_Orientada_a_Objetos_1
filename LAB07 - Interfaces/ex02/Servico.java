@@ -5,14 +5,17 @@ public class Servico implements Classificavel{
         this.preco = preco;
     }
 
-    public int MenorQue(Classificavel q){
+    public int menorQue(Classificavel q){
         Servico compara = (Servico) q;
 
         if(this.preco < compara.preco){
-            return 0;
+            return -1;
+        }
+        if(this.preco > compara.preco){
+            return 1;
         }
         else{
-            return 1;
+            return 0;
         }
     }
 

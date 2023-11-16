@@ -4,14 +4,17 @@ public class Produto implements Classificavel{
     public Produto(int codigo){
         this.codigo = codigo;
     }
-    public int MenorQue(Classificavel o){
+    public int menorQue(Classificavel o){
         Produto compara = (Produto) o;
 
         if(this.codigo < compara.codigo){
-            return 0;
+            return -1;
+        }
+        if(this.codigo > compara.codigo){
+            return 1;
         }
         else{
-            return 1;
+            return 0;
         }
     }
 

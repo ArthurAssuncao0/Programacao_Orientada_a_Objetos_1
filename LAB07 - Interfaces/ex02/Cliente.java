@@ -4,14 +4,17 @@ public class Cliente implements Classificavel{
     public Cliente(String nome){
         this.nome = nome;
     }
-    public int MenorQue(Classificavel p){
+    public int menorQue(Classificavel p){
         Cliente compara = (Cliente) p;
 
         if(this.nome.compareTo(compara.nome) < 0){
-            return 0;
+            return -1;
+        }
+        if(this.nome.compareTo(compara.nome) > 0){
+            return 1;
         }
         else{
-            return 1;
+            return 0;
         }
     }
 

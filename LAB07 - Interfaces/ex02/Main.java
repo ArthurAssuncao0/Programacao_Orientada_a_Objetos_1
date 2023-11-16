@@ -32,7 +32,7 @@ public class Main {
             Classificavel chave = v[i];
             int j = i - 1;
 
-            while (j >= 0 && chave.MenorQue(v[j])){
+            while (j >= 0 && chave.menorQue(v[j]) < 0){
                 v[j + 1] = v[j];
                 j = j - 1;
             }

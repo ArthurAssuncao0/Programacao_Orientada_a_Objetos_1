@@ -1,4 +1,4 @@
 public interface Classificavel {
-    int MenorQue (Classificavel obj);
+    int menorQue (Classificavel obj);
     void imprime();
 }
