@@ -18,6 +18,14 @@ public class EstudanteMestrado extends EstudantePosGrad {
                 '}');
     }
 
+    public void print(boolean teste) {
+        if (!teste) {
+            print();
+        } else {
+            mostrarAlunos();
+        }
+    }
+
     public String getTipo() {
         return tipo;
     }
@@ -32,5 +40,15 @@ public class EstudanteMestrado extends EstudantePosGrad {
 
     public void setTituloDissertacao(String tituloDissertacao) {
         this.tituloDissertacao = tituloDissertacao;
+    }
+
+    public void mostrarAlunos () {
+        System.out.println("\nAluno de Mestrado: ");
+        System.out.println("Nome: " + getNome());
+        System.out.println("Endereço: " + getEndereco());
+        System.out.println("Formação: " + getFormacao());
+        System.out.println("Linha de pesquisa: " + getLinhaDePesquisa());
+        System.out.println("Tipo: " + getTipo());
+        System.out.println("Título dissertação: " + getTituloDissertacao());
     }
 }

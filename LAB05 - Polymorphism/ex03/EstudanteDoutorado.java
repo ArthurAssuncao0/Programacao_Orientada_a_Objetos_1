@@ -16,6 +16,14 @@ public class EstudanteDoutorado extends EstudantePosGrad {
 
     }
 
+    public void print(boolean teste) {
+        if (!teste) {
+            print();
+        } else {
+            mostrarAlunos();
+        }
+    }
+
     public String getTituloTese() {
         return tituloTese;
     }
@@ -23,5 +31,13 @@ public class EstudanteDoutorado extends EstudantePosGrad {
     public void setTituloTese(String tituloTese) {
         this.tituloTese = tituloTese;
     }
-}
 
+    public void mostrarAlunos () {
+        System.out.println("\nAluno de Doutorado: ");
+        System.out.println("Nome: " + getNome());
+        System.out.println("Endereço: " + getEndereco());
+        System.out.println("Formação: " + getFormacao());
+        System.out.println("Linha de pesquisa: " + getLinhaDePesquisa());
+        System.out.println("Título da tese: " + tituloTese);
+    }
+}

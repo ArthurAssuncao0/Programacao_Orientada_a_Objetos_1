@@ -32,4 +32,12 @@ public class EstudantePosGrad extends Estudante {
     public void setLinhaDePesquisa(String linhaDePesquisa) {
         this.linhaDePesquisa = linhaDePesquisa;
     }
+
+    public void mostrarAlunos () {
+        System.out.println("\nAluno de Pós Graduação: ");
+        System.out.println("Nome: " + getNome());
+        System.out.println("Endereço: " + getEndereco());
+        System.out.println("Formação: " + getFormacao());
+        System.out.println("Linha de pesquisa: " + getLinhaDePesquisa());
+    }
 }

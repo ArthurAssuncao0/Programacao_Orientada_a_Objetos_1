@@ -13,11 +13,26 @@ public class EstudanteGraduacao extends Estudante {
                 '}');
     }
 
+    public void print(boolean teste) {
+        if (!teste) {
+            print();
+        } else {
+            mostrarAlunos();
+        }
+    }
+
     public String getTituloTCC() {
         return tituloTCC;
     }
 
     public void setTituloTCC(String tituloTCC) {
         this.tituloTCC = tituloTCC;
+    }
+
+    public void mostrarAlunos () {
+        System.out.println("\nAluno de Graduação: ");
+        System.out.println("Nome: " + getNome());
+        System.out.println("Endereço: " + getEndereco());
+        System.out.println("Título TCC: " + getTituloTCC());
     }
 }

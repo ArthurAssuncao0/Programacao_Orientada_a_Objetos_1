@@ -14,6 +14,16 @@ public class Estudante {
                 '}');
     }
 
+    public void print(boolean teste) {
+        if (!teste) {
+            print();
+        } else {
+            System.out.println("Estudante: ");
+            System.out.println("Nome: " + nome);
+            System.out.println("Endereço: " + endereco);
+        }
+    }
+
     public String getNome() {
         return nome;
     }
@@ -29,5 +39,7 @@ public class Estudante {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
+
+    public void mostrarAlunos () {}
 
 }
